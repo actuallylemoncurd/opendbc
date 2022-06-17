@@ -1433,6 +1433,19 @@ BO_ 2000 Diagnose_1: 8 XXX
  SG_ DI1_KM_Stand_alt : 62|1@1+ (1,0) [0|1] "" XXX
  SG_ DI1_Zeit_alt : 63|1@1+ (1,0) [0|1] "" XXX
 
+BO_ 512 GAS_COMMAND: 6 EON
+ SG_ GAS_COMMAND : 7|16@0+ (0.5,0) [0|1] "" INTERCEPTOR
+ SG_ GAS_COMMAND2 : 23|16@0+ (0.9857,0) [0|1] "" INTERCEPTOR
+ SG_ ENABLE : 39|1@0+ (1,0) [0|1] "" INTERCEPTOR
+ SG_ COUNTER_PEDAL : 35|4@0+ (1,0) [0|15] "" INTERCEPTOR
+ SG_ CHECKSUM_PEDAL : 47|8@0+ (1,0) [0|255] "" INTERCEPTOR
+
+BO_ 513 GAS_SENSOR: 6 INTERCEPTOR
+ SG_ STATE : 39|4@0+ (1,0) [0|15] "" EON
+ SG_ COUNTER_PEDAL : 35|4@0+ (1,0) [0|15] "" EON
+ SG_ CHECKSUM_PEDAL : 47|8@0+ (1,0) [0|255] "" EON
+ SG_ INTERCEPTOR_GAS : 7|16@0+ (0.5,0) [0|1] "" EON
+ SG_ INTERCEPTOR_GAS2 : 23|16@0+ (0.9857,0) [0|1] "" EON
 
 CM_ SG_ 210 LM_Offset "centiNewton-meters for ease of calculation without FP math in Panda";
 CM_ SG_ 210 Vib_Amp "Steering wheel haptic, amplitude";

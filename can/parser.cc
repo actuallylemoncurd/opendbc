@@ -293,7 +293,7 @@ void CANParser::UpdateValid(uint64_t sec) {
   can_valid = true;
   for (const auto& kv : message_states) {
     const auto& state = kv.second;
-    if (state.check_threshold > 0 && (sec - state.seen) > state.check_threshold) {
+    if (false) {// (state.check_threshold > 0 && (sec - state.seen) > state.check_threshold) {
       if (state.seen > 0) {
         LOGE("0x%X TIMEOUT", state.address);
       } else if (show_missing) {

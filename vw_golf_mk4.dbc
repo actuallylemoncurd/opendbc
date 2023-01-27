@@ -1150,7 +1150,8 @@ BO_ 644 Motor_Bremse: 6 XXX
  SG_ MOB_Bremsstgr : 16|11@1+ (0.76,0) [0|100] "Unit_PerCent" Vector__XXX
  SG_ MOB_Bremsmom : 27|13@1+ (1,0) [0|8190] "Unit_NewtoMeter" Bremse_MK25AESP
 
-BO_ 870 AWV: 5 XXX
+BO_ 870 mAWV_1: 5 XXX
+ SG_ ANB_Ziel_Teilbrems_Verz_Anf : 54|10@1+ (1,0) [0|1024] "" Bremsbooster
  SG_ AWV_2_Gurtstraffer : 39|1@1+ (1,0) [0|1] ""  Bremsbooster
  SG_ AWV_Infoton : 38|1@1+ (1,0) [0|1] ""  Gateway_Kbi_VW_A,Bremsbooster
  SG_ AWV_2_Warnsymbol : 37|1@1+ (1,0) [0|1] ""  Gateway_Kbi_VW_A,Bremsbooster
@@ -1167,7 +1168,7 @@ BO_ 870 AWV: 5 XXX
  SG_ AWV_res_20 : 20|4@1+ (1,0) [0|0] ""  Bremsbooster
  SG_ AWV_1_Parameter : 18|2@1+ (1,0) [0|3] ""  Bremsbooster
  SG_ AWV_1_Prefill : 17|1@1+ (1,0) [0|1] ""  Bremsbooster
- SG_ AWV_1_Freigabe : 16|1@1+ (1,0) [0|1] ""  Bremsbooster
+ SG_ ANB_Teilbremsung_Freigabe : 16|1@1+ (1,0) [0|1] ""  Bremsbooster
  SG_ AWV_Text : 12|4@1+ (1,0) [0|15] ""  Gateway_Kbi_VW_A,Bremsbooster
  SG_ AWV_Zaehler : 8|4@1+ (1,0) [0|15] ""  Bremsbooster
  SG_ AWV_Checksumme : 0|8@1+ (1,0) [0|255] ""  Bremsbooster

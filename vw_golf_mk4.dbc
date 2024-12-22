@@ -770,23 +770,36 @@ BO_ 1340 Fahrwerk_1: 1 XXX
  SG_ Ansteuererung_Fahrzeugniveau : 0|4@1+ (1,0) [0|15] "" XXX
 
 BO_ 1472 EPB_1: 8 XXX
- SG_ Textmeldungen_EPB : 52|4@1+ (1,0) [0|0] "" XXX
- SG_ Aufmerksamkeits_Gtong_EPB : 51|1@1+ (1,0) [0|0] "" XXX
- SG_ Fehler_Gong_EBP : 50|1@1+ (1,0) [0|0] "" XXX
- SG_ Warnton_EPB : 49|1@1+ (1,0) [0|0] "" XXX
- SG_ Funktionslampe_EPB : 48|1@1+ (1,0) [0|0] "" XXX
- SG_ Frei_EPB_1_1 : 33|15@1+ (1,0) [0|0] "" XXX
- SG_ Fehlerspeichereintrag_EPB : 32|1@1+ (1,0) [0|0] "" XXX
- SG_ Neigungswinkel : 24|8@1+ (1,-128) [-128|127] "g" XXX
- SG_ Verzoegerungsanforderung__EPB_ : 24|8@1+ (0.5,0) [0|255] "g" XXX
- SG_ Status_Neigungswinkelgeber : 15|1@1+ (1,0) [0|0] "" XXX
- SG_ Schalterinfo_Parkbremse : 13|2@1+ (1,0) [0|0] "" XXX
- SG_ Erreichte_Spannkraft : 8|5@1+ (1,0) [0|30] "kN" XXX
- SG_ Checksumme_Parkbremse : 8|8@1+ (1,0) [0|255] "" XXX
- SG_ Schalterstatus_Parkbremse : 7|1@1+ (1,0) [0|0] "" XXX
- SG_ Status_Parkbremse : 6|1@1+ (1,0) [0|0] "" XXX
- SG_ Fehlerstatus_Parkbremse : 4|2@1+ (1,0) [0|0] "" XXX
- SG_ Zaehler_Parkbremse : 0|4@1+ (1,0) [0|0] "" XXX
+ SG_ COUNTER : 0|4@1+ (1,0) [0|15] "" XXX
+ SG_ EP1_Fehler_Sta : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EP1_Sta_EPB : 6|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Sta_Schalter : 7|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Spannkraft : 8|5@1+ (1,0) [0|30] "Unit_KiloNewto" XXX
+ SG_ EP1_Schalterinfo : 13|2@1+ (1,0) [0|3] "" XXX
+ SG_ EP1_Sta_NWS : 15|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Neig_winkel : 16|8@1+ (1,-128) [-128|127] "Unit_PerCentOfForceOfGravi" XXX
+ SG_ EP1_Verzoegerung : 24|8@1+ (0.048,-7.968) [-7.968|4.224] "Unit_MeterPerSeconSquar" XXX
+ SG_ EP1_Fehlereintr : 32|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Freigabe_Ver : 33|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_AutoHold_zul : 34|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_AutoHold_aktiv : 35|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_SleepInd : 36|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Status_Kl_15 : 37|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Lampe_AutoP : 38|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Bremslicht : 39|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Warnton1 : 40|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Warnton2 : 41|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_AnfShLock : 42|1@1+ (1,0) [0|1] "" XXX
+ SG_ EPB_Autoholdlampe : 43|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_QualNeigWi : 44|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_KuppModBer : 45|2@1+ (1,0) [0|3] "" XXX
+ SG_ EP1_HydrHalten : 47|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Fkt_Lampe : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EP1_Warnton : 49|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1_Fehler_BKL : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EP1_Fehler_gelb : 51|1@1+ (1,0) [0|1] "" XXX
+ SG_ EP1__Text : 52|4@1+ (1,0) [0|8] "" Vector__XXX
+ SG_ CHECKSUM : 56|8@1+ (1,0) [0|255] "" XXX
 
 BO_ 1326 Diag_Lenkhilfe: 3 XXX
  SG_ Werkstattcode__Diag_ : 16|8@1+ (1,0) [0|0] "" XXX
@@ -1196,8 +1209,8 @@ BO_ 1470 LDW_Status: 8 XXX
  SG_ LDW_Frueh_Spaet : 38|2@1+ (1,0) [0|3] "" XXX
 
 BO_ 428 Bremse_8: 8 XXX
- SG_ BR8_Checksumme : 0|8@1+ (1,0) [0|255] "" XXX
- SG_ BR8_Zaehler : 8|4@1+ (1,0) [0|15] "" XXX
+ SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" XXX
  SG_ BR8_Sta_ACC_Anf : 12|1@1+ (1,0) [0|1] "" XXX
  SG_ BR8_Verz_EPB_akt : 13|1@1+ (1,0) [0|1] "" XXX
  SG_ BR8_Sta_Br_temp : 14|1@1+ (1,0) [0|1] "" XXX
@@ -1334,6 +1347,8 @@ BO_ 1175 Parkhilfe_01: 8 XXX
  SG_ PH_KD_Fehler : 63|1@1+ (1,0) [0|1] "" XXX
 
 BO_ 1463 Bremse_11: 8 XXX
+ SG_ CHECKSUM : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ COUNTER : 8|4@1+ (1,0) [0|15] "" XXX
  SG_ B11_HydHalten : 13|1@1+ (1,0) [0|1] "" XXX
  SG_ B11_Br_StSt_Info : 14|2@1+ (1,0) [0|3] "" XXX
  SG_ B11_OBD_Nib_VL : 16|4@1+ (1,0) [0|15] "" XXX
@@ -1531,5 +1546,5 @@ CM_ SG_ 1470 XX_DLCORTLC2 "Might be DLC or TLC, might have wrong size";
 CM_ SG_ 1550 MFA_v_Signal_02 "0=km/h, 1=mph";
 
 
-VAL_ 978 LH2_Sta_HCA 0 "disabled" 1 "initializing" 2 "fault" 3 "ready" 4 "rejected" 5 "active";
+VAL_ 978 LH2_Sta_HCA 0 "disabled" 1 "initializing" 2 "fault" 3 "ready" 4 "rejected" 5 "active" 7 "active";
 VAL_ 1088 Waehlhebelposition__Getriebe_1_ 8 "P" 7 "R" 6 "N" 5 "D" 9 "U" 12 "S" 14 "T" 10 "T" 11 "T";
